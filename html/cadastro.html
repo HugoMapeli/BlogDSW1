@@ -7,7 +7,13 @@
   <meta name="author" content="">
   <link rel="icon" href="../../../../favicon.ico">
 
-
+  <style type="text/css">
+    label {
+      font-family: cursive;
+      font-size: 17px;
+      font-weight: bolder;
+    }
+  </style>
   <title>Cadastro</title>
 
   <!-- Bootstrap core CSS -->
@@ -16,7 +22,7 @@
  
 </head>
 
-<body style="background-color: #ffe6e6">
+<body style="background-image: url(../img/ovo.gif);">
   <nav class="navbar navbar-expand-lg" style="background-color:#EFEA66;font-family: cursive"> 
     <a class="navbar-brand" href="index.html"><img style="width: 40%; height: 30%" src="../img/logo.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,12 +70,12 @@
                   <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar o seu endereço de e-mail.</small>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Senha</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                  <label for="password">Senha</label>
+                  <input type="password" class="form-control" id="password" placeholder="Senha">
                 </div>
                 <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Lembrar a senha</label>
+                  <input type="checkbox" class="form-check-input" id="rememberpassword">
+                  <label class="form-check-label" for="rememberpassword">Lembrar a senha</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Login</button>
               </form>
@@ -79,20 +85,23 @@
       </ul>
     </div>
   </nav>
-<div class="col-md-8 order-md-1; container" style="margin-top: 60px;">
-  <h4 class="mb-5" style="text-align: center; font-family: Avantgarde; font-size: 35px">CADASTRO</h4>
+
+  <div class= "container mb-4 pb-4" style="background-color: #EFEA66; border-radius: 5%">
+
+    <div class="col-md-8 order-md-1; container" style="margin-top: 60px;">
+      <h4 class="mb-5 pt-4" style="text-align: center; font-family: cursive; font-size: 45px; color:#00b8e6; font-weight: bold;">CADASTRO</h4>
           <form class="needs-validation" novalidate>
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="firstName">Primeiro Nome</label>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <input type="text" class="form-control" id="firstName" placeholder="ex: Hugo" value="" required>
                 <div class="invalid-feedback">
                   Primeiro nome válido é requisitado.
                 </div>
               </div>
               <div class="col-md-6 mb-3">
                 <label for="lastName">Último Nome</label>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <input type="text" class="form-control" id="lastName" placeholder="ex: Mapeli" value="" required>
                 <div class="invalid-feedback">
                   Último nome válido é requisitado.
                 </div>
@@ -101,7 +110,7 @@
 
             <div class="mb-3">
               <label for="username">Apelido</label>
-                <input type="text" class="form-control" id="username" placeholder="Apelido" required>
+                <input type="text" class="form-control" id="username" placeholder="ex: Huguinho" required>
                 <div class="invalid-feedback" style="width: 100%;">
                  O seu apelido é obrigatório.
                 </div>
@@ -116,16 +125,16 @@
             </div>
             <div class="mb-3">
               <label for="email">Senha </label>
-              <input type="email" class="form-control" id="email" placeholder="Senha" required="">
+              <input type="password" class="form-control" id="email" placeholder="Senha" required="">
               <div class="invalid-feedback">
                 Por favor, insira uma senha válida.
               </div>
             </div>
-            <hr class="mb-4">
-            <button class="btn btn-primary btn-lg btn-block" type="submit">Cadastrar</button>
+            <button class="mt-4 mb-4 btn btn-info btn-block" type="submit">Cadastrar</button>
           </form>
         </div>
-  
+      </div>
+
 
 
     <!-- Bootstrap core JavaScript

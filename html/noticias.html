@@ -7,111 +7,168 @@
     <meta name="author" content="">
 
     <title>Noticias</title>
+    <style type="text/css">
+      .links a:link {
+        color: green;
+      }
+      .links a:visited{
+        color: red;
+      }
+    </style>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
 
   <body style="background-color: #ffcccc">
-    <nav class="navbar navbar-expand-lg" style="background-color:#EFEA66;font-family: cursive"> 
-      <a class="navbar-brand" href="index.html"><img style="width: 40%; height: 30%" src="../img/logo.png"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-expand-lg" style="background-color:#EFEA66;font-family: cursive"> 
+    <a class="navbar-brand" href="index.html"><img style="width: 40%; height: 30%" src="../img/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="noticias.html"><button type="button" class="btn btn-info">Notícias</button></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button type="button" class="btn btn-info"> Tipos de ovos </button>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="mexidos.html">Mexidos</a>
+            <a class="dropdown-item" href="cozidos.html">Cozidos</a>
+            <a class="dropdown-item" href="fritos.html">Fritos</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="omelete.html">Omelete</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="receitas.html"><button type="button" class="btn btn-info">Receitas</button></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="apadrinhe.html"><button type="button" class="btn btn-info">Apadrinhe uma galinha</button></a>
+        </li>
+      </ul>
+
+      <form style=" margin-left: 20%; " class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar no site..." aria-label="Search">
+        <button class="btn btn-info my-2 my-sm-0" type="submit">Pesquisar</button>
+      </form>
+
+      <!-- Button trigger modal -->
+      <button style="margin-left: 15%" type="button" class="btn btn-info" data-toggle="modal" data-target="#loginModalCenter">
+      Login
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="noticias.html"><button type="button" class="btn btn-info">Notícias</button></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <button type="button" class="btn btn-info"> Tipos de ovos </button>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="mexidos.html">Mexidos</a>
-              <a class="dropdown-item" href="cozidos.html">Cozidos</a>
-              <a class="dropdown-item" href="fritos.html">Fritos</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="omelete.html">Omelete</a>
+
+      <!-- Modal -->
+      <div class="modal fade" id="loginModalCenter" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true" style="font-family: serif;"">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLongTitle">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="receitas.html"><button type="button" class="btn btn-info">Receitas</button></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="apadrinhe.html"><button type="button" class="btn btn-info">Apadrinhe uma galinha</button></a>
-          </li>
-        </ul>
+            <div class="modal-body">
+              <form method="post" name="login" id="login">
+                <div class="form-group">
+                  <label for="InputEmail">Endereço de E-mail</label>
+                  <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Digite o e-mail">
+                  <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar o seu endereço de e-mail.</small>
+                </div>
+                <div class="form-group">
+                  <label for="password">Senha</label>
+                  <input type="password" class="form-control" id="password" placeholder="Senha">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="rememberpassword">
+                  <label class="form-check-label" for="rememberpassword">Lembrar a senha</label>
+                  <a href="#" class="float-right">Esqueci minha senha</a>
+                </div>
+              </form>
+              <a href="cadastro.html" class="float-right"> Não tenho conta</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+              <button type="button" class="btn btn-primary">Entrar</button>
+            </div>
+          </div>
+        </div>
+      </div>    
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="cadastro.html"><button type="button" class="btn btn-info">Cadastro</button></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar no site..." aria-label="Search">
-          <button class="btn btn-info my-2 my-sm-0" type="submit">Pesquisar</button>
-        </form>
-    </nav>
-
-    <div class="container-fluid">
+  <div class="container-fluid links">
     <div class="row">
       <div class="col-2" style="background-color: white">
         <h2 style="font-family: cursive; font-size: 35px"> Outras notícias </h4>
-        <img src="../img/gude2.png">
-        ´<p> <a href="https://www.gazetadopovo.com.br/agronegocio/expedicoes/expedicao-avicultura/2018/nunca-se-comeu-tanto-ovo-no-brasil-9o3b5thska6alblvwm0n92trf">Nunca se comeu tanto ovo no brasil</a> </p>
-        <hr>
-        <img src="../img/gude3.png">
-        <p> <a href="https://www1.folha.uol.com.br/equilibrioesaude/2018/07/estamos-comendo-ovos-artificiais-importados-da-china.shtml">Estamos comendo ovos artificiais importados da China? É boato</a> </p>
+          <img src="../img/gude2.png">
+          <p> <a href="https://www.gazetadopovo.com.br/agronegocio/expedicoes/expedicao-avicultura/2018/nunca-se-comeu-tanto-ovo-no-brasil-9o3b5thska6alblvwm0n92trf">Nunca se comeu tanto ovo no brasil</a> </p>
+          <hr>
+          <img src="../img/gude3.png">
+          <p> <a href="https://www1.folha.uol.com.br/equilibrioesaude/2018/07/estamos-comendo-ovos-artificiais-importados-da-china.shtml">Estamos comendo ovos artificiais importados da China? É boato</a> </p>
+          <hr>
+          <img src="../img/gude4.jpg">
+          <p> <a href="https://g1.globo.com/pa/santarem-regiao/noticia/2018/07/25/jovem-furta-galinhas-tenta-vender-as-aves-ao-dono-e-e-preso-em-flagrante-no-pa.ghtml"> Jovem furta galinhas, tenta vender as aves ao dono e é preso em flagrante no PA </a> </p>
+          <hr>
+          <img src="../img/gude5.jpg">
+          <p> <a href="https://www.gazetadopovo.com.br/viver-bem/saude-e-bem-estar/laila-galinha-co-terapeuta-melhora-tratamento/"> A galinha que ajuda pacientes com paralisias e deficiências a se recuperarem melhor
+          </a> </p>
+        </div>
 
-        <hr>
-
-
-
-
-      </div>
-    <div class="col-10">
-    <div class="container" style= "height:60%; width: 60%;">
-      <h1 style="text-align: center; font-family: cursive; text-decoration: blink"> Notícias da Semana<img src="../img/gude1.png"> </h1> 
-      <div id="carousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel" data-slide-to="1"></li>
-          <li data-target="#carousel" data-slide-to="2"></li>
-        </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="../img/carrefour.jpeg"  >
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Carrefour Brasil venderá só ovos de galinhas criadas sem gaiola</h5>
-            <p>Veja mais</p>
+        <div class="col-10">
+          <div class="container" style= "height:60%; width: 60%;">
+            <h1 style="text-align: center; font-family: cursive; padding-bottom: 7%; padding-top: 3%; font-size: 70px"> Notícias da Semana<img src="../img/gude1.png"> </h1> 
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="../img/carrefour.jpeg"  >
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Carrefour Brasil venderá só ovos de galinhas criadas sem gaiola</h5>
+                    <p>Veja mais</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../img/ovos2.jpg" ">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Saiba o que é #FAKE sobre relatos de ovos feitos de plástico nas redes</h5>
+                    <p>Veja mais</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../img/ovos3.jpg">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Ovo: como escolher? Como guardar? Como testar?</h5>
+                    <p>Veja mais</p>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="../img/ovos2.jpg" ">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Saiba o que é #FAKE sobre relatos de ovos feitos de plástico nas redes</h5>
-          <p>Veja mais</p>
-        </div>
       </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="../img/ovos3.jpg">
-        <div class="carousel-caption d-none d-md-block">
-      <h5>Ovo: como escolher? Como guardar? Como testar?</h5>
-      <p>Veja mais</p>
-      </div>
+    </div>
   </div>
-  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>
-  </div>
-</div>
-
-</div>
-</div>
-</div>
 
 
     <!-- Bootstrap core JavaScript
@@ -130,7 +187,7 @@
     </script>
   </body>
 
-        <footer style="background-color: lightgray; margin-top: 10%">
+        <footer style="background-color: lightgray; margin-top: 10%; margin-top: -0.02%">
         <div class="p-5">
         <span style="font-size: 120%; margin-left: 7%">© Copyright 2000-2018 Ovos & Ovos Comunicação e Participações S.A.</span>
         <span class="float-right" style="margin-right: 7%"><a href="#">Minha conta</a></span>

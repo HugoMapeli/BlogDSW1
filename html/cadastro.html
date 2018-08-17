@@ -8,7 +8,7 @@
   <link rel="icon" href="../../../../favicon.ico">
 
   <style type="text/css">
-    label {
+    .cadastro label {
       font-family: cursive;
       font-size: 17px;
       font-weight: bolder;
@@ -53,20 +53,31 @@
         </li>
       </ul>
 
-      <form class="form-inline my-2 my-lg-0">
+      <form style=" margin-left: 20%; " class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar no site..." aria-label="Search">
         <button class="btn btn-info my-2 my-sm-0" type="submit">Pesquisar</button>
       </form>
 
-      <ul class="navbar-nav ml-2 mb-2" style="margin-right: 10%">
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <button type="button" class="btn btn-info float-right"> Login </button>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <form>
+      <!-- Button trigger modal -->
+      <button style="margin-left: 15%" type="button" class="btn btn-info" data-toggle="modal" data-target="#loginModalCenter">
+      Login
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="loginModalCenter" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true" style="font-family: serif;"">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLongTitle">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="post" name="login" id="login">
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Endereço de E-mail</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o e-mail">
+                  <label for="InputEmail">Endereço de E-mail</label>
+                  <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Digite o e-mail">
                   <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar o seu endereço de e-mail.</small>
                 </div>
                 <div class="form-group">
@@ -76,17 +87,27 @@
                 <div class="form-group form-check">
                   <input type="checkbox" class="form-check-input" id="rememberpassword">
                   <label class="form-check-label" for="rememberpassword">Lembrar a senha</label>
+                  <a href="#" class="float-right">Esqueci minha senha</a>
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
               </form>
+              <a href="cadastro.html" class="float-right"> Não tenho conta</a>
             </div>
-          </a>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+              <button type="button" class="btn btn-primary">Entrar</button>
+            </div>
+          </div>
+        </div>
+      </div>    
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="cadastro.html"><button type="button" class="btn btn-info">Cadastro</button></a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <div class= "container mb-4 pb-4" style="background-color: #EFEA66; border-radius: 5%">
+  <div class= "cadastro container mb-4 pb-4" style="background-color: #EFEA66; border-radius: 5%">
     <div class="col-md-8 order-md-1; container" style="margin-top: 60px;">
       <h4 class="mb-5 pt-4" style="text-align: center; font-family: cursive; font-size: 45px; color:#00b8e6; font-weight: bold;">CADASTRO</h4>
         <form class="needs-validation" novalidate>
@@ -122,14 +143,27 @@
               Por favor, insira um endereço de email válido.
             </div>
           </div>
-
+          <div class="row">
+          <div class="col">
           <div class="mb-3">
-            <label for="email">Senha </label>
-            <input type="password" class="form-control" id="email" placeholder="Senha" required="">
+            <label for="senha">Senha </label>
+            <input type="password" class="form-control" id="senha" placeholder="Senha" required="">
             <div class="invalid-feedback">
               Por favor, insira uma senha válida.
             </div>
           </div>
+        </div>
+          <div class="col">
+          <div class="mb-3">
+            <label for="confirmarsenha"> Confirmar a senha </label>
+            <input type="password" class="form-control" id="confirmarsenha" placeholder="Senha" required="">
+            <div class="invalid-feedback">
+              Por favor, insira uma senha válida.
+            </div>
+          </div>
+        </div>
+      </div>
+        
 
           <button class="mt-4 mb-4 btn btn-info btn-block" type="submit">Cadastrar</button>
 

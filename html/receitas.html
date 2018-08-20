@@ -37,17 +37,10 @@
         <li class="nav-item active">
           <a class="nav-link" href="noticias.html"><button type="button" class="btn btn-info">Notícias</button></a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item">
+          <a class="nav-link" href="tipos.html">
             <button type="button" class="btn btn-info"> Tipos de ovos </button>
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="mexidos.html">Mexidos</a>
-            <a class="dropdown-item" href="cozidos.html">Cozidos</a>
-            <a class="dropdown-item" href="fritos.html">Fritos</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="omelete.html">Omelete</a>
-          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="receitas.html"><button type="button" class="btn btn-info">Receitas</button></a>
@@ -57,38 +50,60 @@
         </li>
       </ul>
 
-      <form class="form-inline my-2 my-lg-0">
+      <form style=" margin-left: 20%; " class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar no site..." aria-label="Search">
         <button class="btn btn-info my-2 my-sm-0" type="submit">Pesquisar</button>
       </form>
 
-      <ul class="navbar-nav ml-2 mb-2" style="margin-right: 10%">
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <button type="button" class="btn btn-info float-right"> Login </button>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <form>
+      <!-- Button trigger modal -->
+      <button style="margin-left: 15%" type="button" class="btn btn-info" data-toggle="modal" data-target="#loginModalCenter">
+      Login
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="loginModalCenter" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true" style="font-family: serif;"">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLongTitle">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="post" name="login" id="login">
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Endereço de E-mail</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o e-mail">
+                  <label for="InputEmail">Endereço de E-mail</label>
+                  <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Digite o e-mail">
                   <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar o seu endereço de e-mail.</small>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Senha</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                  <label for="password">Senha</label>
+                  <input type="password" class="form-control" id="password" placeholder="Senha">
                 </div>
                 <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Lembrar a senha</label>
+                  <input type="checkbox" class="form-check-input" id="rememberpassword">
+                  <label class="form-check-label" for="rememberpassword">Lembrar a senha</label>
+                  <a href="#" class="float-right">Esqueci minha senha</a>
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
               </form>
+              <a href="cadastro.html" class="float-right"> Não tenho conta</a>
             </div>
-          </a>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+              <button type="button" class="btn btn-primary">Entrar</button>
+            </div>
+          </div>
+        </div>
+      </div>    
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="cadastro.html"><button type="button" class="btn btn-info">Cadastro</button></a>
         </li>
       </ul>
     </div>
   </nav>
+
   <h1 style="padding-top: 2%; text-align: center;font-family: cursive; text-decoration: blink; color: #2cdd5b">Novas receitas</h1>
   <div class="container branco semlinha" style= "height:60%; width: 60%;padding-top: 2%;">
       <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -282,4 +297,12 @@
         });
       </script>
     </body>
+    <footer style="background-color: lightgray; margin-top: 10%">
+      <div class="p-5">
+        <span style="font-size: 120%; margin-left: 7%">© Copyright 2000-2018 Ovos & Ovos Comunicação e Participações S.A.</span>
+        <span class="float-right" style="margin-right: 7%"><a href="#">Minha conta</a></span>
+        <span class="float-right" style="margin-right: 7%"><a href="#">Termos de uso</a></span>
+        <span class="float-right" style="margin-right: 7%"><a href="#">Uso de imagem</a></span>
+      </div>
+      </footer>
     </html>

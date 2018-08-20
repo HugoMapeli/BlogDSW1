@@ -33,17 +33,10 @@
         <li class="nav-item active">
           <a class="nav-link" href="noticias.html"><button type="button" class="btn btn-info">Notícias</button></a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item">
+          <a class="nav-link" href="tipos.html">
             <button type="button" class="btn btn-info"> Tipos de ovos </button>
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="mexidos.html">Mexidos</a>
-            <a class="dropdown-item" href="cozidos.html">Cozidos</a>
-            <a class="dropdown-item" href="fritos.html">Fritos</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="omelete.html">Omelete</a>
-          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="receitas.html"><button type="button" class="btn btn-info">Receitas</button></a>
@@ -74,15 +67,21 @@
               </button>
             </div>
             <div class="modal-body">
-              <form method="post" name="login" id="login">
+              <form method="post" name="login" class="needs-validation" novalidate="">
                 <div class="form-group">
                   <label for="InputEmail">Endereço de E-mail</label>
-                  <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Digite o e-mail">
+                  <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Digite o e-mail" required="">
                   <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar o seu endereço de e-mail.</small>
+                  <div class="invalid-feedback">
+                    Informe o endereço de e-mail.
+                  </div>
                 </div>
                 <div class="form-group">
                   <label for="password">Senha</label>
-                  <input type="password" class="form-control" id="password" placeholder="Senha">
+                  <input type="password" class="form-control" id="password" placeholder="Senha" required="">
+                  <div class="invalid-feedback">
+                    Informe a senha.
+                  </div>
                 </div>
                 <div class="form-group form-check">
                   <input type="checkbox" class="form-check-input" id="rememberpassword">
@@ -94,7 +93,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
-              <button type="button" class="btn btn-primary">Entrar</button>
+              <button type="submit" class="btn btn-primary">Entrar</button>
             </div>
           </div>
         </div>
@@ -110,18 +109,18 @@
   <div class= "cadastro container mb-4 pb-4" style="background-color: #EFEA66; border-radius: 5%">
     <div class="col-md-8 order-md-1; container" style="margin-top: 60px;">
       <h4 class="mb-5 pt-4" style="text-align: center; font-family: cursive; font-size: 45px; color:#00b8e6; font-weight: bold;">CADASTRO</h4>
-        <form class="needs-validation" novalidate>
+        <form method="post" name="cadastroform" class="needs-validation" novalidate>
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="firstName">Primeiro Nome</label>
-              <input type="text" class="form-control" id="firstName" placeholder="ex: Hugo" value="" required>
+              <input type="text" class="form-control" id="firstName" placeholder="ex: Hugo" required>
               <div class="invalid-feedback">
                 Primeiro nome válido é requisitado.
               </div>
             </div>
             <div class="col-md-6 mb-3">
               <label for="lastName">Último Nome</label>
-              <input type="text" class="form-control" id="lastName" placeholder="ex: Mapeli" value="" required>
+              <input type="text" class="form-control" id="lastName" placeholder="ex: Mapeli" required>
               <div class="invalid-feedback">
                 Último nome válido é requisitado.
               </div>
@@ -131,7 +130,7 @@
           <div class="mb-3">
             <label for="username">Apelido</label>
             <input type="text" class="form-control" id="username" placeholder="ex: Huguinho" required>
-            <div class="invalid-feedback" style="width: 100%;">
+            <div class="invalid-feedback">
               O seu apelido é obrigatório.
             </div>
           </div>
@@ -144,29 +143,27 @@
             </div>
           </div>
           <div class="row">
-          <div class="col">
-          <div class="mb-3">
-            <label for="senha">Senha </label>
-            <input type="password" class="form-control" id="senha" placeholder="Senha" required="">
-            <div class="invalid-feedback">
-              Por favor, insira uma senha válida.
+            <div class="col">
+              <div class="mb-3">
+                <label for="senha">Senha </label>
+                <input type="password" class="form-control" id="senha" placeholder="Senha" required="">
+                <div class="invalid-feedback">
+                  Por favor, insira uma senha válida.
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-          <div class="col">
-          <div class="mb-3">
-            <label for="confirmarsenha"> Confirmar a senha </label>
-            <input type="password" class="form-control" id="confirmarsenha" placeholder="Senha" required="">
-            <div class="invalid-feedback">
-              Por favor, insira uma senha válida.
-            </div>
-          </div>
-        </div>
-      </div>
-        
 
+            <div class="col">
+              <div class="mb-3">
+                <label for="confirmarsenha"> Confirmar a senha </label>
+                <input type="password" class="form-control" id="confirmarsenha" placeholder="Senha" required="">
+                <div class="invalid-feedback">
+                  Por favor, insira uma senha válida.
+                </div>
+              </div>
+            </div>
+          </div>
           <button class="mt-4 mb-4 btn btn-info btn-block" type="submit">Cadastrar</button>
-
         </form>
       </div>
     </div>
@@ -208,4 +205,12 @@
       })();
       </script>
     </body>
+    <footer style="background-color: lightgray; margin-top: 10%">
+      <div class="p-5">
+        <span style="font-size: 120%; margin-left: 7%">© Copyright 2000-2018 Ovos & Ovos Comunicação e Participações S.A.</span>
+        <span class="float-right" style="margin-right: 7%"><a href="#">Minha conta</a></span>
+        <span class="float-right" style="margin-right: 7%"><a href="#">Termos de uso</a></span>
+        <span class="float-right" style="margin-right: 7%"><a href="#">Uso de imagem</a></span>
+      </div>  
+    </footer>
     </html>

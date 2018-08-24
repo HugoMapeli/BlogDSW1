@@ -8,18 +8,18 @@
   <link rel="icon" href="../../../../favicon.ico">
 
   <style type="text/css">
-    .cadastro label {
-      font-family: cursive;
-      font-size: 17px;
-      font-weight: bolder;
-    }
-  </style>
-  <title>Cadastro</title>
+  .cadastro label {
+    font-family: cursive;
+    font-size: 17px;
+    font-weight: bolder;
+  }
+</style>
+<title>Cadastro</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="signin.css" rel="stylesheet">
- 
+<!-- Bootstrap core CSS -->
+<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="signin.css" rel="stylesheet">
+
 </head>
 
 <body style="background-image: url(../img/ovo.gif);">
@@ -53,7 +53,7 @@
 
       <!-- Button trigger modal -->
       <button style="margin-left: 15%" type="button" class="btn btn-info" data-toggle="modal" data-target="#loginModalCenter">
-      Login
+        Login
       </button>
 
       <!-- Modal -->
@@ -104,64 +104,64 @@
   <div class= "cadastro container mb-4 pb-4" style="background-color: #EFEA66; border-radius: 5%">
     <div class="col-md-8 order-md-1; container" style="margin-top: 60px;">
       <h4 class="mb-5 pt-4" style="text-align: center; font-family: cursive; font-size: 45px; color:#00b8e6; font-weight: bold;">CADASTRO</h4>
-        <form method="post" name="cadastroform" class="needs-validation" novalidate>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label for="firstName">Primeiro Nome</label>
-              <input type="text" class="form-control" id="firstName" placeholder="ex: Hugo" required>
-              <div class="invalid-feedback">
-                Primeiro nome válido é requisitado.
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="lastName">Último Nome</label>
-              <input type="text" class="form-control" id="lastName" placeholder="ex: Mapeli" required>
-              <div class="invalid-feedback">
-                Último nome válido é requisitado.
-              </div>
-            </div>
-          </div>
-
-          <div class="mb-3">
-            <label for="username">Apelido</label>
-            <input type="text" class="form-control" id="username" placeholder="ex: Huguinho" required>
+      <form method="post" name="cadastroform" class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Primeiro Nome</label>
+            <input type="text" class="form-control" id="firstName" placeholder="ex: Hugo" required>
             <div class="invalid-feedback">
-              O seu apelido é obrigatório.
+              Primeiro nome válido é requisitado.
             </div>
           </div>
-
-          <div class="mb-3">
-            <label for="email">Email </label>
-            <input type="email" class="form-control" id="email" placeholder="voce@exemplo.com" required="">
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Último Nome</label>
+            <input type="text" class="form-control" id="lastName" placeholder="ex: Mapeli" required>
             <div class="invalid-feedback">
-              Por favor, insira um endereço de email válido.
+              Último nome válido é requisitado.
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <div class="mb-3">
-                <label for="senha">Senha </label>
-                <input type="password" class="form-control" id="senha" placeholder="Senha" required="">
-                <div class="invalid-feedback">
-                  Por favor, insira uma senha válida.
-                </div>
-              </div>
-            </div>
+        </div>
 
-            <div class="col">
-              <div class="mb-3">
-                <label for="confirmarsenha"> Confirmar a senha </label>
-                <input type="password" class="form-control" id="confirmarsenha" placeholder="Senha" required="">
-                <div class="invalid-feedback">
-                  Por favor, insira uma senha válida.
-                </div>
+        <div class="mb-3">
+          <label for="username">Apelido</label>
+          <input type="text" class="form-control" id="username" placeholder="ex: Huguinho" required>
+          <div class="invalid-feedback">
+            O seu apelido é obrigatório.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Email </label>
+          <input type="email" class="form-control" id="email" placeholder="voce@exemplo.com" required="">
+          <div class="invalid-feedback">
+            Por favor, insira um endereço de email válido.
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="mb-3">
+              <label for="senha">Senha </label>
+              <input type="password" class="form-control" id="senha" placeholder="Senha" required="">
+              <div class="invalid-feedback">
+                Por favor, insira uma senha válida.
               </div>
             </div>
           </div>
-          <button class="mt-4 mb-4 btn btn-info btn-block" type="submit">Cadastrar</button>
-        </form>
-      </div>
+
+          <div class="col">
+            <div class="mb-3">
+              <label for="confirmarsenha"> Confirmar a senha </label>
+              <input type="password" class="form-control" id="confirmarsenha" placeholder="Senha" required="">
+              <div class="invalid-feedback">
+                Por favor, insira uma senha válida.
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="mt-4 mb-4 btn btn-info btn-block" type="submit">Cadastrar</button>
+      </form>
     </div>
+  </div>
 
 
 
@@ -180,9 +180,9 @@
         });
 
         (function() {
-        'use strict';
+          'use strict';
 
-        window.addEventListener('load', function() {
+          window.addEventListener('load', function() {
           // Fetch all the forms we want to apply custom Bootstrap validation styles to
           var forms = document.getElementsByClassName('needs-validation');
 
@@ -197,7 +197,7 @@
             }, false);
           });
         }, false);
-      })();
+        })();
       </script>
     </body>
     <footer style="background-color: lightgray; margin-top: 10%">

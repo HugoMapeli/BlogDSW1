@@ -8,127 +8,127 @@
 
     <title>Index</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
 
-<body style="background-color:#ffe8ce">
-  <nav class="navbar navbar-expand-lg" style="background-color:#EFEA66;font-family: cursive"> 
-    <a class="navbar-brand" href="index.html"><img style="width: 40%; height: 30%" src="../img/logo.png"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav m-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="noticias.html"><button type="button" class="btn btn-info">Notícias</button></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="autores.html">
-            <button type="button" class="btn btn-info"> Autores </button>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="receitas.html"><button type="button" class="btn btn-info">Receitas</button></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="apadrinhe.html"><button type="button" class="btn btn-info">Apadrinhe uma galinha</button></a>
-        </li>
-      </ul>
-
-      <form style=" margin-left: 20%; " class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar no site..." aria-label="Search">
-        <button class="btn btn-info my-2 my-sm-0" type="submit">Pesquisar</button>
-      </form>
-
-      <!-- Button trigger modal -->
-      <button style="margin-left: 15%" type="button" class="btn btn-info" data-toggle="modal" data-target="#loginModalCenter">
-      Login
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background-color:#EFEA66;font-family: cursive"> 
+      <a class="navbar-brand" href="index.html"><img style="width: 40%; height: 30%" src="../img/logo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="noticias.html"><button type="button" class="btn btn-info">Notícias</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="autores.html">
+              <button type="button" class="btn btn-info"> Autores </button>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="receitas.html"><button type="button" class="btn btn-info">Receitas</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="apadrinhe.html"><button type="button" class="btn btn-info">Apadrinhe uma galinha</button></a>
+          </li>
+        </ul>
 
-      <!-- Modal -->
-      <div class="modal fade" id="loginModalCenter" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true" style="font-family: serif;"">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="loginModalLongTitle">Login</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form method="post" name="login" id="login">
-                <div class="form-group">
-                  <label for="InputEmail">Endereço de E-mail</label>
-                  <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Digite o e-mail">
-                  <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar o seu endereço de e-mail.</small>
-                </div>
-                <div class="form-group">
-                  <label for="password">Senha</label>
-                  <input type="password" class="form-control" id="password" placeholder="Senha">
-                </div>
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="rememberpassword">
-                  <label class="form-check-label" for="rememberpassword">Lembrar a senha</label>
-                  <a href="#" class="float-right">Esqueci minha senha</a>
-                </div>
-              </form>
-              <a href="cadastro.html" class="float-right"> Não tenho conta</a>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
-              <button type="button" class="btn btn-primary">Entrar</button>
+        <form style=" margin-left: 20%; " class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar no site..." aria-label="Search">
+          <button class="btn btn-info my-2 my-sm-0" type="submit"><a style="text-decoration:none; color:white" href="erro.html">Pesquisar</a></button>
+        </form>
+
+        <!-- Button trigger modal -->
+        <button style="margin-left: 15%" type="button" class="btn btn-info" data-toggle="modal" data-target="#loginModalCenter">
+          Login
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="loginModalCenter" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true" style="font-family: serif;"">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLongTitle">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form method="post" name="login" id="login">
+                  <div class="form-group">
+                    <label for="InputEmail">Endereço de E-mail</label>
+                    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Digite o e-mail">
+                    <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar o seu endereço de e-mail.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" class="form-control" id="password" placeholder="Senha">
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="rememberpassword">
+                    <label class="form-check-label" for="rememberpassword">Lembrar a senha</label>
+                    <a href="#" class="float-right">Esqueci minha senha</a>
+                  </div>
+                </form>
+                <a href="cadastro.html" class="float-right"> Não tenho conta</a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+                <button type="button" class="btn btn-primary">Entrar</button>
+              </div>
             </div>
           </div>
+        </div>    
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="cadastro.html"><button type="button" class="btn btn-info">Cadastro</button></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <img style="border-radius: 50%; height: 20%; margin-left: 25%; padding-top: 5%; font-size: 15%;" src="../img/37564103_1733044773478754_2610532941289226240_n.jpg">
+          <p style="text-align: center; padding-top: 5%"><font face="Informal Roman" size="6">Hugo Mapeli, provavelmente a pessoa mais inteligente que você conhecerá em toda sua vida, foi um dos criadores desse super site, que com certeza, está fazendo até sucesso internacional. Hugo, hoje se encontra estudando na Rede Federal de Ensino (IFSP), no estado de São Paulo, mas anteriormente estudou no Antônio Militão de Lima, uma escola bancada pelo estado. Hugo é indiferente na questão de programação, não é a melhor coisa que já aprendeu, mas também podemos dizer que não é a pior.</font></p>
+          <div class="container">
+            <div class="row" style="padding-left: 12%; padding-top: 20%  ">
+              <div class="col">
+                <img src="../img/facebook.ico" style="height: 17%">
+              </div>
+              <div class="col">
+                <img src="../img/instagram_f_icon-icons.com_65485.png" style="height: 17%;">
+              </div>
+              <div class="col">
+                <img src="../img/md_5a97a256bfab4.png" style="height: 19%;">
+              </div>
+            </div>
+          </div>
+          
+          
         </div>
-      </div>    
-      <ul class="navbar-nav m-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="cadastro.html"><button type="button" class="btn btn-info">Cadastro</button></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col">
-      <img style="border-radius: 50%; height: 20%; margin-left: 25%; padding-top: 5%; font-size: 15%;" src="../img/37564103_1733044773478754_2610532941289226240_n.jpg">
-      <p style="text-align: center; padding-top: 5%"><font face="Informal Roman" size="6">Hugo Mapeli, provavelmente a pessoa mais inteligente que você conhecerá em toda sua vida, foi um dos criadores desse super site, que com certeza, está fazendo até sucesso internacional. Hugo, hoje se encontra estudando na Rede Federal de Ensino (IFSP), no estado de São Paulo, mas anteriormente estudou no Antônio Militão de Lima, uma escola bancada pelo estado. Hugo é indiferente na questão de programação, não é a melhor coisa que já aprendeu, mas também podemos dizer que não é a pior.</font></p>
-      <div class="container">
-        <div class="row" style="padding-left: 12%; padding-top: 20%  ">
-          <div class="col">
-            <img src="../img/facebook.ico" style="height: 17%">
-          </div>
-          <div class="col">
-            <img src="../img/instagram_f_icon-icons.com_65485.png" style="height: 17%;">
-          </div>
-          <div class="col">
-            <img src="../img/md_5a97a256bfab4.png" style="height: 19%;">
+        <div class="col">
+          <img style="border-radius: 50%;height: 20%; margin-left: 25%; padding-top: 5%";"  src="../img/39506702_1911635758883279_202211703155326976_n.jpg">
+          <p style="text-align: center; padding-top: 5%"><font face="Informal Roman" size="6">Maria Julia de A. Cardeal, uma estudante da Rede Federal de Ensino (IFSP), no estado de São Paulo, também é uma das criadoras desse maravilhoso site que você está acessando no momento. Maria Julia, uma pessoa muito dedicada, foi uma das prinipais desenvolvedoras desse lindo site. Maria adora participar das aulas de Algoritimo da escola. Faz todos os exercícios da matéria somente para a professora se aproximar, e Maria Julia aproveira dessa situação para sentir o cheiro de uma professora misteriosa, que vocês, como visitantes, não descobrirão quem é. Para descobrir o nome dessa professora, assine nosso site, pagando por mês, uma mensalidade de apenas R$500,00, garantimos que não se arrependerá de conteudos exclusívos.</font></p>
+          <div class="container">
+            <div class="row" style="padding-left: 12%">
+              <div class="col">
+                <img src="../img/facebook.ico" style="height: 17%">
+              </div>
+              <div class="col">
+                <img src="../img/instagram_f_icon-icons.com_65485.png" style="height: 17%;">
+              </div>
+              <div class="col">
+                <img src="../img/md_5a97a256bfab4.png" style="height: 19%;">
+              </div>   
+            </div>
           </div>
         </div>
       </div>
-      
-      
     </div>
-    <div class="col">
-      <img style="border-radius: 50%;height: 20%; margin-left: 25%; padding-top: 5%";"  src="../img/39506702_1911635758883279_202211703155326976_n.jpg">
-     <p style="text-align: center; padding-top: 5%"><font face="Informal Roman" size="6">Maria Julia de A. Cardeal, uma estudante da Rede Federal de Ensino (IFSP), no estado de São Paulo, também é uma das criadoras desse maravilhoso site que você está acessando no momento. Maria Julia, uma pessoa muito dedicada, foi uma das prinipais desenvolvedoras desse lindo site. Maria adora participar das aulas de Algoritimo da escola. Faz todos os exercícios da matéria somente para a professora se aproximar, e Maria Julia aproveira dessa situação para sentir o cheiro de uma professora misteriosa, que vocês, como visitantes, não descobrirão quem é. Para descobrir o nome dessa professora, assine nosso site, pagando por mês, uma mensalidade de apenas R$500,00, garantimos que não se arrependerá de conteudos exclusívos.</font></p>
-     <div class="container">
-        <div class="row" style="padding-left: 12%">
-          <div class="col">
-            <img src="../img/facebook.ico" style="height: 17%">
-          </div>
-          <div class="col">
-            <img src="../img/instagram_f_icon-icons.com_65485.png" style="height: 17%;">
-          </div>
-          <div class="col">
-            <img src="../img/md_5a97a256bfab4.png" style="height: 19%;">
-          </div>   
-        </div>
-      </div>
-    </div>
-</div>
-</div>
   </div>
 
 
@@ -153,10 +153,10 @@
             text: 'Thumbnail'
           });
           
-             (function() {
-        'use strict';
+          (function() {
+            'use strict';
 
-        window.addEventListener('load', function() {
+            window.addEventListener('load', function() {
           // Fetch all the forms we want to apply custom Bootstrap validation styles to
           var forms = document.getElementsByClassName('needs-validation');
 
@@ -171,7 +171,7 @@
             }, false);
           });
         }, false);
-      })();
+          })();
         </script>
       </body>
       <footer style="background-color: lightgray; margin-top: 10%">

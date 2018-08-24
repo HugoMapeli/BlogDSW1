@@ -1,19 +1,18 @@
- <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>Tipos de ovos</title>
+    <title>Index</title>
 
   <!-- Bootstrap core CSS -->
   <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-
-  </style>
 </head>
-<body> 
+
+<body style="background-color:#ffe8ce">
   <nav class="navbar navbar-expand-lg" style="background-color:#EFEA66;font-family: cursive"> 
     <a class="navbar-brand" href="index.html"><img style="width: 40%; height: 30%" src="../img/logo.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,22 +89,60 @@
       </ul>
     </div>
   </nav>
-
-  <div class="container-fluid">
+<div class="container-fluid">
   <div class="row">
     <div class="col">
-      <img style="border-radius: 50%; height: 50%; margin-left: 25%" src="../img/37564103_1733044773478754_2610532941289226240_n.jpg">
+      <img style="border-radius: 50%; height: 20%; margin-left: 25%; padding-top: 5%; font-size: 15%;" src="../img/37564103_1733044773478754_2610532941289226240_n.jpg">
+      <p style="text-align: center; padding-top: 5%"><font face="Informal Roman" size="6">Hugo Mapeli, provavelmente a pessoa mais inteligente que você conhecerá em toda sua vida, foi um dos criadores desse super site, que com certeza, está fazendo até sucesso internacional. Hugo, hoje se encontra estudando na Rede Federal de Ensino (IFSP), no estado de São Paulo, mas anteriormente estudou no Antônio Militão de Lima, uma escola bancada pelo estado. Hugo é indiferente na questão de programação, não é a melhor coisa que já aprendeu, mas também podemos dizer que não é a pior.</font></p>
+      <div class="container">
+        <div class="row" style="padding-left: 12%; padding-top: 20%  ">
+          <div class="col">
+            <img src="../img/facebook.ico" style="height: 17%">
+          </div>
+          <div class="col">
+            <img src="../img/instagram_f_icon-icons.com_65485.png" style="height: 17%;">
+          </div>
+          <div class="col">
+            <img src="../img/md_5a97a256bfab4.png" style="height: 19%;">
+          </div>
+        </div>
+      </div>
+      
+      
     </div>
     <div class="col">
-      <img style="border-radius: 50%;height: 50%; margin-left: 20%"  src="../img/39506702_1911635758883279_202211703155326976_n.jpg">
+      <img style="border-radius: 50%;height: 20%; margin-left: 25%; padding-top: 5%";"  src="../img/39506702_1911635758883279_202211703155326976_n.jpg">
+     <p style="text-align: center; padding-top: 5%"><font face="Informal Roman" size="6">Maria Julia de A. Cardeal, uma estudante da Rede Federal de Ensino (IFSP), no estado de São Paulo, também é uma das criadoras desse maravilhoso site que você está acessando no momento. Maria Julia, uma pessoa muito dedicada, foi uma das prinipais desenvolvedoras desse lindo site. Maria adora participar das aulas de Algoritimo da escola. Faz todos os exercícios da matéria somente para a professora se aproximar, e Maria Julia aproveira dessa situação para sentir o cheiro de uma professora misteriosa, que vocês, como visitantes, não descobrirão quem é. Para descobrir o nome dessa professora, assine nosso site, pagando por mês, uma mensalidade de apenas R$500,00, garantimos que não se arrependerá de conteudos exclusívos.</font></p>
+     <div class="container">
+        <div class="row" style="padding-left: 12%">
+          <div class="col">
+            <img src="../img/facebook.ico" style="height: 17%">
+          </div>
+          <div class="col">
+            <img src="../img/instagram_f_icon-icons.com_65485.png" style="height: 17%;">
+          </div>
+          <div class="col">
+            <img src="../img/md_5a97a256bfab4.png" style="height: 19%;">
+          </div>   
+        </div>
+      </div>
     </div>
+</div>
+</div>
   </div>
 
 
-    <!-- Bootstrap core JavaScript
-      ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-          <script src="assets/js/vendor/jquery-slim.min.js"></script>
+
+
+
+
+
+
+
+      <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/vendor/jquery-slim.min.js"></script>
         <script src="assets/js/vendor/popper.min.js"></script>
         <script src="dist/js/bootstrap.min.js"></script>
         <script src="assets/js/vendor/holder.min.js"></script>
@@ -115,9 +152,28 @@
             fg: '#eceeef',
             text: 'Thumbnail'
           });
+          
+             (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
         </script>
       </body>
-
       <footer style="background-color: lightgray; margin-top: 10%">
         <div class="p-5">
           <span style="font-size: 120%; margin-left: 7%">© Copyright 2000-2018 Ovos & Ovos Comunicação e Participações S.A.</span>

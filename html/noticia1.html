@@ -144,10 +144,56 @@
               </form>
             </div>
             <div class="col-2">
-              <img src="../img/facebook.ico" style="width: 50%; height: 20%; margin-top: 20%;">
-              <img src="../img/user.png"  style="width: 50%; height: 20%; margin-top: 20%;">
+              <img src="../img/facebook.ico" style="width: 45%; height: 18%; margin-top: 20%;"><p>Logar com Facebook</p>
+
+              <img data-toggle="modal" data-target="#loginModalCenter" src="../img/user.png"  style="width: 45%; height: 18%; margin-top: 20%;"><p data-toggle="modal" data-target="#loginModalCenter">Logar com a conta do site</p>
+
+              <!-- Modal -->
+              <div class="modal fade" id="loginModalCenter" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true" style="font-family: serif;"">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="loginModalLongTitle">Login</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form method="post" name="login" id="login">
+                        <div class="form-group">
+                          <label for="InputEmail">Endereço de E-mail</label>
+                          <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Digite o e-mail">
+                          <small id="emailHelp" class="form-text text-muted">Nunca iremos compartilhar o seu endereço de e-mail.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="password">Senha</label>
+                          <input type="password" class="form-control" id="password" placeholder="Senha">
+                        </div>
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="rememberpassword">
+                          <label class="form-check-label" for="rememberpassword">Lembrar a senha</label>
+                          <a href="#" class="float-right">Esqueci minha senha</a>
+                        </div>
+                      </form>
+                      <a href="cadastro.html" class="float-right"> Não tenho conta</a>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+                      <button type="button" class="btn btn-primary">Entrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>    
+
             </div>
           </div>
+          <div class="row pt-5">
+            <div class="col">
+            <hr>
+            <img style="border: solid black 2px;border-radius: 50%; width: 12%; height: 75%" src="../img/comentario.png">
+            <h6 style="padding-top: -10px"> Ednaldo Pereira </h6>
+          </div>
+        </div>
         </div>
       </div>
         <div class="col-2 p-0">
